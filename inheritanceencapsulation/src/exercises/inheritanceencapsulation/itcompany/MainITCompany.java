@@ -18,6 +18,7 @@ public class MainITCompany {
 
         Manager[] managers = {manager1, manager2, manager3};
         Developer[] developers = {developer1, developer2, developer3, developer4};
+
         int counter = 0;
 
         Manager managerWithMostEmployees = Arrays.stream(managers).max(Comparator.comparingInt(m -> m.getEmployee())).orElse(null);
@@ -32,6 +33,7 @@ public class MainITCompany {
 
         //int maxEmployerCount = -1;
         //Manager managerWithMax = null;
+
         for (Manager m : managers) {
             if(m.getEmployee() >= 10) {
                 //System.out.println(m.getEmployee());

@@ -2,7 +2,7 @@ package exercises.inheritanceencapsulation.devices;
 
 class MainDevices {
 
-    public static <Device> void main(String[] args) {
+    public static void main(String[] args) {
 
         Computer computer1 = new Computer(1976, "Apple-1", 600.50, "System monitor");
         Computer computer2 = new Computer(1985, "Turbo PC", 795.99, "MS-DOS");
