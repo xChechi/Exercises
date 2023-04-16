@@ -29,6 +29,7 @@ public class MainFormula1 {
             teams[index1] = teams[index2];
             teams[index2] = temp;
 
+
             // Update points, winRaces, and winCars for swapped teams
             temp.setPoints(temp.getPoints() + 25);
             temp.pilot.setWinRaces(temp.pilot.getWinRaces() + 1);
@@ -47,7 +48,8 @@ public class MainFormula1 {
         for (Team t : highestScoredTeam) {
             //System.out.println(t.getName() + " has the highest score of " + highestScore);
             System.out.printf("%s has the highest score of %d points, with pilot %s who won %d races and constructor \"%s\" with %d winning cars"
-                                , t.getName(), highestScore, t.pilot.getName(), t.pilot.getWinRaces(), t.constructor.getName(), t.constructor.getWinCars());
+                                , t.getName(), highestScore, t.pilot.getName(), t.pilot.getWinRaces()
+                                , t.constructor.getName(), t.constructor.getWinCars());
         }
 
     }
