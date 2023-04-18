@@ -65,11 +65,11 @@ public class MainTeacherStudentDog {
     private static void updateMarks(int[] marks, String teacherSubject, int i) {
 
         if ("Math".equals(teacherSubject)) {
-            marks[1] = Math.max(0, Math.min(6, marks[1] + i));
+            marks[1] = Math.max(2, Math.min(6, marks[1] + i));
         } else if ("Chemistry".equals(teacherSubject)) {
-            marks[0] = Math.max(0, Math.min(6, marks[0] + i));
+            marks[0] = Math.max(2, Math.min(6, marks[0] + i));
         } else if ("Music".equals(teacherSubject)) {
-            marks[2] = Math.max(0, Math.min(6, marks[2] + i));
+            marks[2] = Math.max(2, Math.min(6, marks[2] + i));
         }
     }
 }
