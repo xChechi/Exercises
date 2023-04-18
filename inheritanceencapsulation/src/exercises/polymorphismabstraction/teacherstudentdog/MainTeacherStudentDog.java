@@ -26,24 +26,23 @@ public class MainTeacherStudentDog {
             } else {
                 teacher = teacher2;
             }
+
             System.out.println(" ");
             String teacherSubject = teacher.identifyHimself();
             teacher.homework();
             pupil.identifyHimself();
 
+            int[] marks = pupil.getMark();
             if (pupil.homework()) {
                 System.out.println(pupil.getName() + ": This is my homework\n");
-                int[] marks = pupil.getMark();
                 updateMarks(marks, teacherSubject, 1);
                 pupil.setMark(marks);
             } else if (pupil.getDog().eating()) {
                 System.out.printf("%s: My dog ate it%n", pupil.getName());
-                int[] marks = pupil.getMark();
                 updateMarks(marks, teacherSubject, -1);
                 pupil.setMark(marks);
             } else {
                 System.out.printf("%s: I don't have homework%n", pupil.getName());
-                int[] marks = pupil.getMark();
                 switch (teacherSubject) {
                     case "Math":
                         marks[1] = 2;
