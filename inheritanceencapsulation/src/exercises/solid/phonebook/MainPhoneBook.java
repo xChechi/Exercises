@@ -23,7 +23,7 @@ public class MainPhoneBook {
         scanner.nextLine();
         switch (choice) {
             case 1 -> {
-                System.out.println("Searching by fullname (one or more");
+                System.out.println("Searching by fullname (one or more)");
 
                 String input = scanner.nextLine();
                 String formattedName = input.substring(0, 1).toUpperCase() + input.substring(1).toLowerCase();
