@@ -8,13 +8,6 @@ public class MainCrazyProfessor {
 
         Map<String, Boolean> list =  Students.showStudents();
 
-        int counter = 0;
-        for (Boolean b : list.values()) {
-            if (b) {
-                counter++;
-            }
-        }
-
         System.out.print("Students: ");
         for (String name : list.keySet()) {
 
@@ -30,6 +23,12 @@ public class MainCrazyProfessor {
                 condition = "on time";
             } else condition = "is late";
             System.out.println(name + " - " + condition);
+        }
+        int counter = 0;
+        for (Boolean b : list.values()) {
+            if (b) {
+                counter++;
+            }
         }
 
         if (counter > list.size()/2) {
