@@ -18,10 +18,10 @@ public class MainCrazyProfessor {
         for (Map.Entry<String, Boolean> entry : list.entrySet()) {
             String name = entry.getKey();
             Boolean present = entry.getValue();
+
             String condition;
-            if (present) {
-                condition = "on time";
-            } else condition = "is late";
+            condition = (present) ? "on time" : "is late";
+
             System.out.println(name + " - " + condition);
         }
         int counter = 0;
