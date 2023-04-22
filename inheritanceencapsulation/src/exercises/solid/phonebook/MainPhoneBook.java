@@ -38,7 +38,7 @@ public class MainPhoneBook {
                 List<String> filteredList = new ArrayList<>(Arrays.asList(searchedNames));
                 // Version 3 - IntelliJ mi podava che s constructor call bilo oshte po pravilno
                 // Version 2 - filteredList.addAll(Arrays.asList(searchedNames));
-                /* Version 1 - Tova otgore e smart way da se napishe tova v komentara
+                /* Version 1 (moqta noob versiq) - Tova otgore e smart way da se napishe tova v komentara
                 for (String s : searchedNames) {
                     filteredList.add(s);
                 }
