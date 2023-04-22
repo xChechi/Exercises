@@ -17,7 +17,7 @@ public class MainPhoneBook {
         System.out.println(""" 
                            What name are you looking for?
                                 Press 1 for full name search
-                                Press 2 for search by letters
+                                Press 2 for search by name segment
                            """);
         int choice = scanner.nextInt();
         scanner.nextLine();
