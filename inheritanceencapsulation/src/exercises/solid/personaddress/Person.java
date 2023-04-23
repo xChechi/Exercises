@@ -24,18 +24,5 @@ public abstract class Person {
         return age;
     }
 
-    public Map<String, List<String>> getLocations() {
-        return locations;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", locations=" + locations +
-                '}';
-    }
-
     abstract void identify();
 }
