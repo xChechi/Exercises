@@ -18,7 +18,6 @@ public class Ivan implements Calculations {
 
     @Override
     public int biggestNum(int[] num) {
-        int biggest = Arrays.stream(num).reduce((f, s) -> s).getAsInt();
-        return biggest;
+        return Arrays.stream(num).reduce((f, s) -> s).getAsInt();
     }
 }

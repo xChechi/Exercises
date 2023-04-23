@@ -16,7 +16,6 @@ public class MasterMind implements Calculations {
 
     @Override
     public int biggestNum(int[] num) {
-        int biggest = Arrays.stream(num).max().getAsInt();
-        return biggest;
+        return Arrays.stream(num).max().getAsInt();
     }
 }

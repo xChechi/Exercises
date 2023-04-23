@@ -18,7 +18,6 @@ public class Georgi implements Calculations {
 
     @Override
     public int biggestNum(int[] num) {
-        int biggest = Arrays.stream(num).findFirst().getAsInt();
-        return biggest;
+        return Arrays.stream(num).findFirst().getAsInt();
     }
 }
