@@ -19,8 +19,7 @@ public class MainCrazyProfessor {
             String name = entry.getKey();
             Boolean present = entry.getValue();
 
-            String condition;
-            condition = (present) ? "on time" : "is late";
+            String condition = (present) ? "on time" : "is late";
 
             System.out.println(name + " - " + condition);
         }
