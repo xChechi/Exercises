@@ -8,7 +8,7 @@ public abstract class Person {
 
     private String name;
     private int age;
-    Map<String, List<String>> locations;
+    protected Map<String, List<String>> locations;
 
     public Person(String name, int age) {
         this.name = name;

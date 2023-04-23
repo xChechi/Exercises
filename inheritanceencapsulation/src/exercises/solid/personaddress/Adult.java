@@ -1,6 +1,7 @@
 package exercises.solid.personaddress;
 
-import java.util.HashMap;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Adult extends Person {
@@ -10,11 +11,15 @@ public class Adult extends Person {
     public Adult(String name, int age, String hobby) {
         super(name, age);
         this.hobby = hobby;
-        this.locations = new HashMap<>();
     }
 
     public String getHobby() {
         return hobby;
+    }
+
+    public void getLocation () {
+        this.locations.put("Sofia", Arrays.asList("10 Pobeda Road", "5 Nadejda Road"));
+        this.locations.put("Varna", Collections.singletonList("1 Lale Road"));
     }
 
     @Override
